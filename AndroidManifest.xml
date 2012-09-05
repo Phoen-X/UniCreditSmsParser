@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.vvygulyarniy"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <supports-screens android:resizeable="true"
+                      android:smallScreens="true"
+                      android:normalScreens="true"
+                      android:largeScreens="true"
+                      android:anyDensity="true"/>
+
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <application android:label="@string/appName" android:icon="@drawable/ic_launcher">
+        <activity android:name=".activity.TransactionListActivity"
+                  android:label="@string/appName">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.TransactionInfoActivity">
+        </activity>
+        <activity android:name=".activity.SummEditActivity" android:label="Edit Transaction"
+                  android:theme="@android:style/Theme.DeviceDefault.Dialog"/>
+        <receiver android:name=".sms.SmsReciever">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

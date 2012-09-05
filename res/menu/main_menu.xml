@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/updateFromSMS" android:orderInCategory="1" android:title="@string/updateFromSms"/>
+    <item android:id="@+id/updateList" android:orderInCategory="2" android:title="@string/update"/>
+</menu>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout"
+            android:layout_gravity="left" android:gravity="top">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01.01.2001 01:01:01"
+                android:id="@+id/dateText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:editable="false" android:textColor="@color/gray" android:textSize="12dp"/>
+        <TextView
+                android:layout_width="120dp"
+                android:layout_height="32dp"
+                android:text="12000.00"
+                android:id="@+id/amountText"
+                android:textSize="18dp"
+                android:textStyle="bold" android:singleLine="true" android:layout_alignLeft="@+id/dateText"
+                android:layout_below="@+id/dateText" android:gravity="center_vertical|center_horizontal"/>
+        <TextView
+                android:layout_width="111dp"
+                android:layout_height="28dp"
+                android:text="150000.00"
+                android:id="@+id/totalText"
+                android:layout_alignParentLeft="true" android:layout_marginLeft="145dp"
+                android:layout_below="@+id/dateText" android:layout_alignParentRight="true" android:gravity="center_vertical|right"
+                android:singleLine="true" android:textColor="@color/white" android:textSize="14dp"
+                android:typeface="normal" android:textStyle="bold|italic"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/totalLabel"
+                android:id="@+id/totalLabel"
+                android:layout_alignRight="@+id/totalText"
+                android:layout_alignParentTop="true"/>
+    </RelativeLayout>

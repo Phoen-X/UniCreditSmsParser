@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appName">Credit Card Manager</string>
+    <string name="totalLabel">Остаток:</string>
+    <string name="update">Обновить</string>
+    <string name="updateFromSms">Обновить из СМС</string>
+    <string name="transactionAdded">Новая транзакция</string>
+</resources>
